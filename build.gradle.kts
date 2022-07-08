@@ -1,5 +1,5 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.gradle.api.tasks.testing.logging.TestLogEvent
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.7.0"
@@ -18,7 +18,7 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
     api(kotlin("stdlib-jdk8"))
     // Test dependencies
-    testImplementation(platform("org.junit:junit-bom:5.7.2"))
+    testImplementation(platform("org.junit:junit-bom:5.8.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.assertj:assertj-core:3.20.2")
     testImplementation("org.mockito.kotlin:mockito-kotlin:3.2.0")
